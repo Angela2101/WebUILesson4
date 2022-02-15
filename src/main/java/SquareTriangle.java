@@ -14,7 +14,7 @@ public class SquareTriangle {
 
         if (p <= a || p <= b || p <= c || a*b*c==0) {
             isTriangle = false;
-            //throw new MyException("Не треуг");
+            //throw new MyException("Не треугольник");
         }
         return isTriangle ? Math.sqrt(p*(p - a)*(p - b)*(p - c)) : -1;
     }

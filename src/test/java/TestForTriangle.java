@@ -42,7 +42,7 @@ public class TestForTriangle {
     @DisplayName("Это не треугольник")
     @Test
     public void NegativeTest1() {
-        double squareTriangle = SquareTriangle.CalculateSquare(0, 0, 0);
+        double squareTriangle = SquareTriangle.CalculateSquare(0, 1, 2);
         assertTrue(squareTriangle <= 0, " Это не треугольник");
         Assertions.assertEquals(squareTriangle, -1);
     }
@@ -50,7 +50,7 @@ public class TestForTriangle {
     @DisplayName("Проверка на отрицательные значения")
     @Test
     public void NegativeTest2() {
-        double squareTriangle = SquareTriangle.CalculateSquare(-3, -4, -5);
+        double squareTriangle = SquareTriangle.CalculateSquare(-1, -2, -3);
         assertTrue(squareTriangle <= 0, " Это не треугольник");
         Assertions.assertEquals(squareTriangle, -1);
     }
